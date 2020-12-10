@@ -4,7 +4,7 @@ pipeline {
         stage('Build') { 
             agent {
                 docker {
-                    image 'docker:stable'
+                    image 'python:2-alpine'
                     privileged = true 
                 }
             }
